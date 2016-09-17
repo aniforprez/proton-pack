@@ -12,21 +12,27 @@
 
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="{{asset "css/material.red-blue.min.css"}}">
+	<link rel="stylesheet" href="{{asset "css/custom.css"}}">
 	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 
 	{{ghost_head}}
 </head>
 <body class="{{body_class}}">
-
 	<div class="mdl-layout__container">
-		<div class="mdl-layout">
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-color--grey-100">
+			{{navigation}}
 			<div class="mdl-layout__content">
 				{{{body}}}
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+	{{ghost_foot}}
 
 </body>
 </html>
