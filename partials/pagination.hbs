@@ -1,0 +1,19 @@
+<div class="mdl-content mdl-color--white mdl-cell mdl-cell--8-col mdl-cell--12-col-tablet mdl-cell--4-offset-desktop mdl-shadow--2dp">
+	<nav class="navigation-row" role="navigation">
+		<span>
+			<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent {{^if prev}}navigation-hide{{/if}}" href="{{page_url prev}}">
+				<i class="material-icons">arrow_back</i> Newer Posts
+			</a>
+		</span>
+		<span class="page-number">
+			<button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+				{{page}} / {{pages}}
+			</button>
+		</span>
+		<span>
+			<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent {{^if next}}navigation-hide{{/if}}" href="{{page_url next}}">
+				Older Posts <i class="material-icons">arrow_forward</i>
+			</a>
+		</span>
+	</nav>
+</div>

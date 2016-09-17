@@ -1,0 +1,12 @@
+{{#if @blog.navigation}}
+<header class="mdl-layout__header">
+	<div class="mdl-layout__header-row">
+		<div class="mdl-layout-spacer"></div>
+		<nav class="mdl-navigation">
+			{{#foreach navigation}}
+			<a href="{{url absolute="true"}}" class="mdl-navigation__link {{#if current}}is_active{{/if}}">{{label}}</a>
+			{{/foreach}}
+		</nav>
+	</div>
+</header>
+{{/if}}
