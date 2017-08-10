@@ -1,4 +1,8 @@
 {
-	"name": "Proton Pack",
-	"version": "0.0.1"
+	"name": "proton-pack",
+	"version": "0.0.1",
+	"author": {
+		"name": "Anirudh Sylendranath",
+		"email": "ani.for.prez@gmail.com"
+	}
 }
